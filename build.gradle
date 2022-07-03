@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.8.0-beta4'
+    implementation group: 'org.thymeleaf', name: 'thymeleaf', version: '3.0.12.RELEASE'
+    implementation "io.javalin:javalin:4.6.0"
+}
+
+test {
+    useJUnitPlatform()
+}
