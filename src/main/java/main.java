@@ -3,7 +3,7 @@ import io.javalin.Javalin;
 public class main {
 
     public static void main(String[] arg){
-        Javalin app = Javalin.create().start(7000);
+        Javalin app = Javalin.create().start(7001);
 
         app.get("/",ctx -> {
             ctx.render("inicio.html");
