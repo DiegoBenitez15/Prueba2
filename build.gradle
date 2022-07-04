@@ -1,5 +1,10 @@
 plugins {
     id 'java'
+    id 'application'
+}
+
+application{
+    mainClass.set("main")
 }
 
 group 'org.example'
@@ -19,4 +24,8 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+run {
+    standardInput = System.in
 }
